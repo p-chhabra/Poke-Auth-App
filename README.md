@@ -21,6 +21,7 @@ There is Logout button which allows user to logout.
 - Clone the repository in the your local PC / LAPTOP.
 - Run the following command in the terminal
   ```bash
+  npm install
   npm run dev
   ```
 This should start a local development server.
