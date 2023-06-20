@@ -19,7 +19,7 @@ There is Logout button which allows user to logout.
 
 ## LOCAL DEVELOPMENT
 - Clone the repository in the your local PC / LAPTOP.
-- Run the following command in the terminal
+- Run the following commands in the terminal
   ```bash
   npm install
   npm run dev
