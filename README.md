@@ -17,7 +17,7 @@ The API used to fetch pokemons is [PokeAPI](https://pokeapi.co/)
 The landing page is a SIGN UP page, which prompts user to sign in before continuing. After signing in, user is presented with a list of Pokemons which are fetched using static site generation feature of NextJS. There is SAVE button below the list of pokemons that allows users save the data in their account in the firebase database. Every user has seperate list of saved pokemons.
 There is Logout button which allows user to logout.
 
-The project is hosted ### [here](https://poke-auth-app-fiq3.vercel.app/).
+The project is hosted [here](https://poke-auth-app-fiq3.vercel.app/).
 
 ## LOCAL DEVELOPMENT
 - Clone the repository in the your local PC / LAPTOP.
