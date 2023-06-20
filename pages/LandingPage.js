@@ -5,15 +5,18 @@ import { useRouter } from "next/router";
 import Protected from "./api/components/Protected";
 import { db } from "./api/firebase";
 import { doc, updateDoc } from "firebase/firestore";
+import { useAlert } from "react-alert";
 
 const LandingPage = ({ pokemons }) => {
   const { logOut, user } = UserAuth();
   const router = useRouter();
+  const alert = useAlert();
 
   const signOutHandler = async () => {
     try {
       await logOut();
       router.replace("/");
+      alert.success("Succesfully logged out");
     } catch (err) {
       console.log(err);
     }
@@ -24,6 +27,8 @@ const LandingPage = ({ pokemons }) => {
       const response = await updateDoc(doc(db, "users", user.uid), {
         pokemons: pokemons.results,
       });
+
+      alert.success("Data succesfully saved");
     } catch (err) {
       console.log(err);
     }
